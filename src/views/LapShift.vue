@@ -239,7 +239,7 @@
         fetchAllShift(){
             this.allShift = []
             axios({
-                url: `http://localhost:3000/shift?mulai=${this.date1}&akhir=${this.date2}`,
+                url: `https://kueku-server-15ecaf79af24.herokuapp.com/shift?mulai=${this.date1}&akhir=${this.date2}`,
                 method: 'get',
                 headers:{
                     token : localStorage.getItem('token')

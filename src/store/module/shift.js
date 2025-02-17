@@ -28,7 +28,7 @@ const actions = {
   getDataShift(context,payload,limit) {
       context.commit('fillShift',false)                
       axios({
-        url: `http://localhost:3000/shift/kasir/login`,
+        url: `https://kueku-server-15ecaf79af24.herokuapp.com/shift/kasir/login`,
         method: 'get',
         headers:{
             token : localStorage.getItem('token')

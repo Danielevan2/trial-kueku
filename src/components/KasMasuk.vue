@@ -152,7 +152,7 @@
                 let getDate = convertTZ(new Date,'Asia/Jakarta')             
                this.loading2 = true      
                 axios({
-                    url: `http://localhost:3000/shift/tambahKas/${this.data._id}`,
+                    url: `https://kueku-server-15ecaf79af24.herokuapp.com/shift/tambahKas/${this.data._id}`,
                     method: 'put',
                     headers:{
                         token : localStorage.getItem('token')
@@ -197,7 +197,7 @@
                             this.loading2 = true
                                 const temp = this.kasMasuk.filter(item => String(item._id) !== String(data._id))
                                     axios({
-                                        url: `http://localhost:3000/shift/${this.data._id}`,
+                                        url: `https://kueku-server-15ecaf79af24.herokuapp.com/shift/${this.data._id}`,
                                         method: 'put',
                                         headers:{
                                             token : localStorage.getItem('token')

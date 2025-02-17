@@ -284,7 +284,7 @@
           } else{     
             this.loading = true      
             axios({
-              url: `http://localhost:3000/item/search2?src=${this.src}`,
+              url: `https://kueku-server-15ecaf79af24.herokuapp.com/item/search2?src=${this.src}`,
               method: 'get',
               headers:{
                   token : localStorage.getItem('token')
@@ -325,7 +325,7 @@
                     temp.item.push(element._id)
                 });
                 axios({
-                    url: `http://localhost:3000/bundling`,
+                    url: `https://kueku-server-15ecaf79af24.herokuapp.com/bundling`,
                     method: 'post',
                     headers:{
                         token : localStorage.getItem('token')

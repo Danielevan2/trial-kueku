@@ -305,7 +305,7 @@ export default {
                 this.password = '-'
             }
             axios({
-                url: `http://localhost:3000/user/editUserLogin/${this.tempId}`,
+                url: `https://kueku-server-15ecaf79af24.herokuapp.com/user/editUserLogin/${this.tempId}`,
                 method: 'put',
                 headers:{
                     token : localStorage.getItem('token')

@@ -230,7 +230,7 @@
                   temp.kodeBarang = '-'
                 }       
                 axios({
-                    url: `http://localhost:3000/item`,
+                    url: `https://kueku-server-15ecaf79af24.herokuapp.com/item`,
                     method: 'post',
                     headers:{
                         token : localStorage.getItem('token')

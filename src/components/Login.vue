@@ -5,10 +5,10 @@
             <div class="col-lg-3 col-md-2"></div>
             <div class="col-lg-6 col-md-8 login-box">
                 <div class="col-lg-12 login-key">
-                    <img src="../assets/adaraLogo.png" width="150" alt="icon">
+                    <!-- <img src="../assets/adaraLogo.png" width="150" alt="icon"> -->
                 </div>
                 <div class="col-lg-12 login-title">
-                    ADMIN PANEL
+                    FREE TRIAL
                 </div>
 
                 <div class="col-lg-12 login-form">
@@ -74,7 +74,7 @@ export default {
     }),        
     login(){
        axios({
-            url: `http://localhost:3000/user/admin/login`,
+            url: `https://kueku-server-15ecaf79af24.herokuapp.com/user/admin/login`,
             method: 'post',
             data:{
               email: this.email,

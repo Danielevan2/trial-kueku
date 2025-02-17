@@ -406,7 +406,7 @@
                     /* Read more about isConfirmed, isDenied below */
                     if (result.isConfirmed) {
                         axios({
-                            url: `http://localhost:3000/shift/kasir/mulai`,
+                            url: `https://kueku-server-15ecaf79af24.herokuapp.com/shift/kasir/mulai`,
                             method: 'post',
                             headers:{
                                 token : this.pin
@@ -459,7 +459,7 @@
                     /* Read more about isConfirmed, isDenied below */
                     if (result.isConfirmed) {
                         axios({
-                            url: `http://localhost:3000/shift/kasir/selesai`,
+                            url: `https://kueku-server-15ecaf79af24.herokuapp.com/shift/kasir/selesai`,
                             method: 'put',
                             headers:{
                                 token : localStorage.getItem('token')

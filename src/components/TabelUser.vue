@@ -216,7 +216,7 @@
                     this.password = '-'
                 }
                 axios({
-                    url: `http://localhost:3000/user/admin/${this.tempId}`,
+                    url: `https://kueku-server-15ecaf79af24.herokuapp.com/user/admin/${this.tempId}`,
                     method: 'put',
                     headers:{
                         token : localStorage.getItem('token')
@@ -264,7 +264,7 @@
                             
                     } else if (result.isDenied) {
                         axios({
-                        url: `http://localhost:3000/user/${id}`,
+                        url: `https://kueku-server-15ecaf79af24.herokuapp.com/user/${id}`,
                         method: 'delete',
                         headers:{
                             token : localStorage.getItem('token')

@@ -100,7 +100,7 @@
             this.fillLoading(true)
             this.fillData([])
             axios({
-              url: `http://localhost:3000/item/search?src=${this.src}&page=${this.currentPage}&limit=${this.perPage}`,
+              url: `https://kueku-server-15ecaf79af24.herokuapp.com/item/search?src=${this.src}&page=${this.currentPage}&limit=${this.perPage}`,
               method: 'get',
               headers:{
                   token : localStorage.getItem('token')

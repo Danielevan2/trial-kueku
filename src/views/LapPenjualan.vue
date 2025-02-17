@@ -412,7 +412,7 @@
           } else{        
             this.allPenjualan
             axios({
-              url: `http://localhost:3000/transaksi/by?kode=${this.src}`,
+              url: `https://kueku-server-15ecaf79af24.herokuapp.com/transaksi/by?kode=${this.src}`,
               method: 'get',
               headers:{
                   token : localStorage.getItem('token')
@@ -440,7 +440,7 @@
             this.allPenjualan = []
             this.loading = true
             axios({
-                url: `http://localhost:3000/transaksi?mulai=${this.date1}&akhir=${this.date2}`,
+                url: `https://kueku-server-15ecaf79af24.herokuapp.com/transaksi?mulai=${this.date1}&akhir=${this.date2}`,
                 method: 'get',
                 headers:{
                     token : localStorage.getItem('token')
@@ -518,7 +518,7 @@
                             
                     } else if (result.isDenied) {
                         axios({
-                        url: `http://localhost:3000/transaksi/batal/${id}`,
+                        url: `https://kueku-server-15ecaf79af24.herokuapp.com/transaksi/batal/${id}`,
                         method: 'put',
                         headers:{
                             token : localStorage.getItem('token')
@@ -540,7 +540,7 @@
             this.dialog = false
             this.loading2 = true
             axios({
-                    url: `http://localhost:3000/transaksi/refund/${this.tempIdTransaksi}`,
+                    url: `https://kueku-server-15ecaf79af24.herokuapp.com/transaksi/refund/${this.tempIdTransaksi}`,
                     method: 'put',
                     headers:{
                         token : localStorage.getItem('token')
