@@ -2,7 +2,7 @@
   <div>  
     <div v-if="isLogin"> 
       <div>
-        <b-navbar toggleable="lg" type="dark" class="nav">
+        <b-navbar toggleable="lg" type="dark" class="nav" v-if="!print">
           <b-navbar-brand @click.stop="drawer = true" style="cursor: pointer"><b-icon icon="list" font-scale="1"></b-icon> Menu</b-navbar-brand>
 
           <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
@@ -243,6 +243,7 @@
 <script>
 import axios from 'axios'
 import Swal from 'sweetalert2'
+import { mapGetters } from 'vuex'
 
 export default {
   name: 'home',
@@ -275,6 +276,10 @@ export default {
 
   },
   computed:{
+    ...mapGetters({
+            data: 'shift/getData',
+            print: 'transaksi/getPrint',
+        }),  
     isLogin(){
       return this.$store.state.isLogin
     },    

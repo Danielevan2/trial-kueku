@@ -1,10 +1,9 @@
 <template>
   <div class="overflow-auto"> 
         <div class="ticket">
-            <p class="centered">ADARA COSMETICS ACCESSORIES
-                <br>jl.Kedungan-Tambakboyo,Pedan
-                <br>085733433312
-                <br>shopee: kosmetikadara</p>
+            <p class="centered">KUEKU
+                <br>solo baru
+                <br>08123456789</p>
             <small>___________________________</small>
             <div>
                 <small>Id.Transaksi : {{transaksi._id}}</small>
